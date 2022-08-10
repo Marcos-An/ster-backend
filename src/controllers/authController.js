@@ -1,6 +1,9 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
+//Models
+const User = require("../models/User");
+
 const checkTokenMiddleware = (req, res, next) => {
   const authHeader = req.headers["Authorization"];
   const token = authHeader && authHeader.split(" ")[1];
