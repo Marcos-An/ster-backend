@@ -4,6 +4,7 @@
   "description": "backend to ster chat",
   "main": "app.js",
   "scripts": {
+    "start": "node ./src/app.js ",
     "dev": "nodemon ./src/app.js "
   },
   "author": "Marcos Silva",
